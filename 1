@@ -19,9 +19,15 @@ end;
 
  while true do
 wait(0.5)
+plr.PlayerGui.Main.MenuButton.Enabled = false
+plr.PlayerGui.Main.ShopButton.Enabled = false
+plr.PlayerGui.Main.InventoryButton.Enabled = false
+plr.PlayerGui.Main.StatsButton.Enabled = false
+
 Notification.new("! <Color=Yellow>HACKED BY KICHI <Color=/> ! "):Display()
 --Notification.new("Earned <Color=Green>$25,000<Color=/>"):Display()
 plr.Data.Exp.Value = 1
+plr.Data.Level.Value = 1
 plr.Data.Beli.Value = 1
  Sound.Play(Sound, LevelUpSound.Value)
 end
